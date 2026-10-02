@@ -1,49 +1,1051 @@
-<> Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Θ
+<title>SMV TRADERS | USTAAD SPECIAL RICE</title>
 
-Issues
+<meta name="description"
+content="SMV TRADERS - USTAAD SPECIAL RICE | Premium Rice from Siruguppa, Karnataka">
 
-Pull requests
+<style>
 
-Agents
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-Actions
+html{
+    scroll-behavior:smooth;
+}
 
-Projects
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.6;
+}
 
-Wiki
+:root{
+    --gold:#d6b45c;
+    --gold2:#f4dc91;
+    --dark:#050505;
+    --card:#111;
+    --border:rgba(214,180,92,.28);
+    --text:#ddd;
+    --muted:#999;
+}
 
-Security and quality
+/* =========================
+   HEADER
+========================= */
 
-More
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(4,4,4,.94);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+}
 
-Commit ad3e7bc
+.nav{
+    max-width:1180px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-s05937318-bit authored 1 minute
+.logo{
+    color:var(--gold2);
+    font-size:22px;
+    font-weight:900;
+    letter-spacing:3px;
+}
 
-Add files via upload
+.logo span{
+    display:block;
+    color:#aaa;
+    font-size:9px;
+    letter-spacing:4px;
+    margin-top:-3px;
+}
 
-1 file changed
+nav a{
+    color:#eee;
+    text-decoration:none;
+    font-size:13px;
+    margin-left:20px;
+    transition:.3s;
+}
 
-Q Search within code
+nav a:hover{
+    color:var(--gold2);
+}
 
-Product_hook_in_Kannada_voi...
+/* =========================
+   HERO
+========================= */
 
-voice_20260930215449.mp4
+.hero{
+    min-height:88vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+    position:relative;
+    overflow:hidden;
 
-Binary file not shown.
+    background:
+    radial-gradient(circle at center,
+    rgba(214,180,92,.17),
+    transparent 34%),
+    linear-gradient(135deg,#030303,#121212,#030303);
+}
 
-Comments
+.hero:before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    border:1px solid rgba(214,180,92,.12);
+    border-radius:50%;
+}
 
-Subs
+.hero:after{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(214,180,92,.35),
+        transparent
+    );
+}
 
-eceiving notifi
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+}
 
-Browse files
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid var(--gold);
+    border-radius:40px;
+    color:var(--gold2);
+    font-size:11px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:22px;
+}
 
-a3d42
+.hero h1{
+    font-size:clamp(48px,9vw,92px);
+    line-height:.9;
+    letter-spacing:4px;
+    color:var(--gold2);
+    text-shadow:
+    0 0 25px rgba(214,180,92,.12);
+}
 
-13e7bc
+.hero h2{
+    font-size:clamp(19px,4vw,32px);
+    margin:20px 0 12px;
+}
 
-A Lock conversation
+.hero p{
+    max-width:650px;
+    margin:20px auto;
+    color:#bbb;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.gold{
+    color:#111;
+    background:
+    linear-gradient(
+        135deg,
+        #a77b20,
+        #f5dc91,
+        #a77b20
+    );
+}
+
+.outline{
+    color:#fff;
+    border:1px solid var(--gold);
+}
+
+/* =========================
+   COMMON
+========================= */
+
+section{
+    max-width:1180px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-title small{
+    color:var(--gold);
+    letter-spacing:4px;
+    font-size:11px;
+}
+
+.section-title h2{
+    color:var(--gold2);
+    font-size:36px;
+    margin-top:5px;
+}
+
+.section-title p{
+    color:#888;
+    margin-top:7px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box{
+    max-width:850px;
+    margin:auto;
+    padding:40px 30px;
+    text-align:center;
+
+    background:
+    linear-gradient(145deg,#171717,#0b0b0b);
+
+    border:1px solid var(--border);
+    border-radius:22px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
+}
+
+.about-box h3{
+    color:var(--gold2);
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#bbb;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.product{
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+
+    padding:30px 22px;
+
+    background:
+    linear-gradient(145deg,#171717,#0c0c0c);
+
+    border:1px solid var(--border);
+    border-radius:20px;
+
+    transition:.35s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.4);
+}
+
+.product:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:20%;
+    width:60%;
+    height:1px;
+    background:var(--gold);
+}
+
+.product-icon{
+    font-size:45px;
+}
+
+.product h3{
+    color:var(--gold2);
+    margin:14px 0 8px;
+}
+
+.product p{
+    color:#999;
+    font-size:14px;
+}
+
+/* =========================
+   LUXURY BRAND STRIP
+========================= */
+
+.brand-strip{
+    max-width:none;
+    padding:30px 15px;
+    background:#0c0c0c;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+
+.brand-strip-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:25px;
+    text-align:center;
+}
+
+.brand-item{
+    color:#bbb;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.brand-item strong{
+    display:block;
+    color:var(--gold2);
+    font-size:18px;
+    margin-bottom:3px;
+}
+
+/* =========================
+   IMAGE GALLERY
+========================= */
+
+.gallery-section{
+    max-width:none;
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(214,180,92,.06),
+        transparent 45%
+    ),
+    #0b0b0b;
+
+    border-top:1px solid #181818;
+    border-bottom:1px solid #181818;
+}
+
+.gallery-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#111;
+    border:1px solid var(--border);
+    border-radius:18px;
+
+    transition:.35s;
+}
+
+.gallery-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--gold);
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.5);
+}
+
+.gallery-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.04);
+}
+
+.gallery-caption{
+    padding:13px;
+    text-align:center;
+    color:#ddd;
+    background:#111;
+}
+
+.gallery-caption strong{
+    display:block;
+    color:var(--gold2);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    max-width:none;
+    background:#070707;
+    border-top:1px solid var(--border);
+}
+
+.contact-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.contact-box{
+    padding:27px;
+    border-radius:18px;
+    background:
+    linear-gradient(145deg,#171717,#0c0c0c);
+    border:1px solid var(--border);
+}
+
+.contact-box strong{
+    display:block;
+    color:var(--gold2);
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.contact-box a,
+.contact-box span{
+    display:block;
+    color:#eee;
+    text-decoration:none;
+    margin:9px 0;
+}
+
+.contact-box a:hover{
+    color:var(--gold2);
+}
+
+.note{
+    color:#777;
+    font-size:12px;
+    margin-top:12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:35px 15px;
+    background:#030303;
+    border-top:1px solid #211b0d;
+    color:#777;
+}
+
+footer strong{
+    display:block;
+    color:var(--gold2);
+    font-size:18px;
+    letter-spacing:3px;
+    margin-bottom:5px;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    z-index:9999;
+
+    padding:14px 20px;
+    border-radius:40px;
+
+    background:#25D366;
+    color:#071b0d;
+
+    text-decoration:none;
+    font-weight:900;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.55);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .nav{
+        padding:12px 14px;
+    }
+
+    .logo{
+        font-size:17px;
+    }
+
+    nav a{
+        margin-left:7px;
+        font-size:10px;
+    }
+
+    .hero{
+        min-height:78vh;
+        padding:60px 18px;
+    }
+
+    .hero h1{
+        font-size:47px;
+    }
+
+    section{
+        padding:60px 16px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+
+    .about-box{
+        padding:28px 18px;
+    }
+
+    .gallery-card img{
+        height:230px;
+    }
+
+    .whatsapp{
+        right:12px;
+        bottom:12px;
+        padding:12px 16px;
+    }
+}
+
+@media(max-width:430px){
+
+    nav a:nth-child(4){
+        display:none;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+SMV TRADERS
+<span>USTAAD SPECIAL RICE</span>
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#products">Rice</a>
+<a href="#gallery">Photos</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+PREMIUM RICE • SIRUGUPPA
+</div>
+
+<h1>
+USTAAD<br>
+SPECIAL RICE
+</h1>
+
+<h2>
+Pure Quality. Perfect Grain. Trusted Taste.
+</h2>
+
+<p>
+Premium rice from SMV TRADERS — selected with care
+for everyday meals, special occasions and trusted business.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn gold"
+href="https://wa.me/919108050680?text=Hello%20SMV%20Traders%2C%20I%20want%20to%20know%20about%20Ustaad%20Special%20Rice."
+target="_blank">
+
+💬 Order on WhatsApp
+
+</a>
+
+<a
+class="btn outline"
+href="https://instagram.com/smv_traders_"
+target="_blank">
+
+📸 Instagram
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BRAND STRIP
+========================= -->
+
+<section class="brand-strip">
+
+<div class="brand-strip-inner">
+
+<div class="brand-item">
+<strong>🌾</strong>
+PREMIUM QUALITY
+</div>
+
+<div class="brand-item">
+<strong>✦</strong>
+SELECTED GRAINS
+</div>
+
+<div class="brand-item">
+<strong>♛</strong>
+USTAAD SPECIAL
+</div>
+
+<div class="brand-item">
+<strong>📍</strong>
+SIRUGUPPA
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="section-title">
+
+<small>OUR STORY</small>
+
+<h2>About SMV TRADERS</h2>
+
+<p>Tradition • Quality • Trust</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>USTAAD SPECIAL RICE</h3>
+
+<p>
+SMV TRADERS brings premium rice selections under
+the USTAAD SPECIAL RICE name, with a focus on
+quality, presentation and trusted taste.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+<div class="section-title">
+
+<small>OUR COLLECTION</small>
+
+<h2>Premium Rice Collection</h2>
+
+<p>Carefully selected for your kitchen</p>
+
+</div>
+
+<div class="products">
+
+<div class="product">
+
+<div class="product-icon">🌾</div>
+
+<h3>Lachkari Wada Kolam</h3>
+
+<p>
+Premium Kolam-style rice for everyday meals
+and special dishes.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-icon">🍚</div>
+
+<h3>SONA</h3>
+
+<p>
+A versatile rice selection designed for
+delicious home cooking.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-icon">✨</div>
+
+<h3>RNR</h3>
+
+<p>
+Carefully selected grains with a premium
+presentation.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-icon">👑</div>
+
+<h3>Ustaad Special</h3>
+
+<p>
+Our signature premium rice identity
+from SMV TRADERS.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO GALLERY
+========================= -->
+
+<section id="gallery" class="gallery-section">
+
+<div class="gallery-inner">
+
+<div class="section-title">
+
+<small>OUR BRAND</small>
+
+<h2>Premium Photo Gallery</h2>
+
+<p>
+Rice • Products • Packaging • SMV TRADERS
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+
+<!-- PHOTO 1 -->
+
+<div class="gallery-card">
+
+<img
+src="1788370929490.png"
+alt="Ustaad Special Rice">
+
+<div class="gallery-caption">
+
+<strong>Ustaad Special Rice</strong>
+
+Premium Collection
+
+</div>
+
+</div>
+
+
+<!-- PHOTO 2 -->
+
+<div class="gallery-card">
+
+<img
+src="photo2.jpg"
+alt="SMV Traders Rice">
+
+<div class="gallery-caption">
+
+<strong>SMV TRADERS</strong>
+
+Premium Rice
+
+</div>
+
+</div>
+
+
+<!-- PHOTO 3 -->
+
+<div class="gallery-card">
+
+<img
+src="photo3.jpg"
+alt="Ustaad Rice">
+
+<div class="gallery-caption">
+
+<strong>Ustaad Collection</strong>
+
+Quality Rice
+
+</div>
+
+</div>
+
+
+<!-- PHOTO 4 -->
+
+<div class="gallery-card">
+
+<img
+src="photo4.jpg"
+alt="SMV Traders">
+
+<div class="gallery-caption">
+
+<strong>SMV TRADERS</strong>
+
+Our Brand
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact-section">
+
+<div class="contact-inner">
+
+<div class="section-title">
+
+<small>GET IN TOUCH</small>
+
+<h2>Contact & Orders</h2>
+
+<p>We are ready to hear from you</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<strong>💬 WhatsApp</strong>
+
+<a
+href="https://wa.me/919108050680?text=Hello%20SMV%20Traders%2C%20I%20want%20to%20know%20about%20Ustaad%20Special%20Rice."
+target="_blank">
+
++91 91080 50680
+
+</a>
+
+<a
+href="https://wa.me/918123105107?text=Hello%20SMV%20Traders%2C%20I%20want%20to%20know%20about%20Ustaad%20Special%20Rice."
+target="_blank">
+
++91 81231 05107
+
+</a>
+
+<a
+href="https://wa.me/919743771786?text=Hello%20SMV%20Traders%2C%20I%20want%20to%20know%20about%20Ustaad%20Special%20Rice."
+target="_blank">
+
++91 97437 71786
+
+</a>
+
+<div class="note">
+Tap any number to start WhatsApp
+</div>
+
+</div>
+
+
+<div class="contact-box">
+
+<strong>📸 Instagram</strong>
+
+<a
+href="https://instagram.com/smv_traders_"
+target="_blank">
+
+@smv_traders_
+
+</a>
+
+<div class="note">
+Follow our latest products
+</div>
+
+</div>
+
+
+<div class="contact-box">
+
+<strong>📍 Business Address</strong>
+
+<span>
+Near Tippu Sulthan Circle,
+Siruguppa, Karnataka
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<strong>SMV TRADERS</strong>
+
+USTAAD SPECIAL RICE
+
+<br><br>
+
+© 2026 SMV TRADERS • All Rights Reserved.
+
+</footer>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/919108050680?text=Hello%20SMV%20Traders%2C%20I%20want%20to%20know%20about%20Ustaad%20Special%20Rice."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+</body>
+</html>
